@@ -6,7 +6,7 @@
       class="relative p-5 bg-white md:max-w-lg max-w-sm mx-auto md:mt-20 md:min-h-[28rem] border-4 border-sky-950 rounded-xl overflow-y-auto"
     >
       <div class="flex flex-col w-full text-lg mt-32">
-        <table class="border border-black">
+        <table class="border border-black w-full">
           <thead class="bg-sky-900 text-white text-center">
             <th>ID Number</th>
             <th>Department</th>
@@ -14,7 +14,7 @@
           </thead>
           <tbody class="text-center">
             <tr>
-              <td class="border-r border-black" v-for="idNumber in idNumbers">{{ idNumber }}</td>
+              <td class="border-r border-black flex flex-col border-b border-black" v-for="idNumber in idNumbers">{{ idNumber }}</td>
               <td class="uppercase border-r border-black">{{ department.name }}</td>
               <td>{{ sectionYear.year_section }}</td>
             </tr>
